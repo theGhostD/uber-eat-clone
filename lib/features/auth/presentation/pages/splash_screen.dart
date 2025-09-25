@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:uber_eat/features/auth/presentation/pages/login_page.dart';
+import 'package:uber_eat/features/auth/presentation/pages/welcome_screen.dart';
 
 class MyAuthSplashScreen extends StatefulWidget {
   const MyAuthSplashScreen({super.key});
