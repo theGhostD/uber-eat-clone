@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:uber_eat/features/auth/presentation/pages/phone_input_screen.dart';
+import 'package:uber_eat/features/auth/presentation/pages/phone_screen.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
