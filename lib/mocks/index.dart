@@ -1,4 +1,5 @@
 import 'package:uber_eat/features/auth/presentation/models/country_models.dart';
+import 'package:uber_eat/features/home/presentation/models/category.dart';
 
 
 const availableCountry = [
@@ -404,4 +405,30 @@ const availableCountry = [
   ),
  
   
+];
+
+
+const availableCategory = [
+  CategoryModel(name: 'Grocery', imageUrl: 'assets/category_images/Grocery.png'),
+
+  CategoryModel(name: 'Alcohol', imageUrl: 'assets/category_images/alcohol.png'),
+
+  CategoryModel(name: 'Ice Cream', imageUrl: 'assets/category_images/ice_cream.png'),
+  CategoryModel(name: 'Halal', imageUrl: 'assets/category_images/Halal.png'),
+
+  CategoryModel(name: 'Convenience', imageUrl: 'assets/category_images/convenience.png'),
+  CategoryModel(name: 'Retail', imageUrl: 'assets/category_images/Retails.png'),
+
+  CategoryModel(name: 'Caribbean', imageUrl: 'assets/category_images/Carribean.png'),
+
+  CategoryModel(name: 'Flowers', imageUrl: 'assets/category_images/flowers.png'),
+
+  CategoryModel(name: 'Specialty', imageUrl: 'assets/category_images/Burger.png'),
+  CategoryModel(name: 'Takeout', imageUrl: 'assets/category_images/Takeout.png'),
+  CategoryModel(name: 'American', imageUrl: 'assets/category_images/American.png'),
+
+  CategoryModel(name: 'Pet Supplies', imageUrl: 'assets/category_images/PetSupplies.png'),
+
+  CategoryModel(name: 'Fast Food', imageUrl: 'assets/category_images/FastFoods.png'),
+  CategoryModel(name: 'French', imageUrl: 'assets/category_images/French.png'),
 ];

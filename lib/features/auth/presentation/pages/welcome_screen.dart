@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:uber_eat/features/auth/presentation/pages/phone_screen.dart';
+import 'package:uber_eat/features/auth/presentation/widgets/button.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -39,47 +39,17 @@ class LoginPage extends StatelessWidget {
                     style: TextStyle(
                       color: Color(0xFF000000),
                       fontWeight: FontWeight.w500,
-                      fontSize: 20,
-                      
+                      fontSize: 24,
                     ),
                   ),
                   SizedBox(height: 12),
-                  GestureDetector(
-                    onTap: (){
-                      Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>PhoneInputScreen()));
+                  ArrowButton(
+                    copy: 'Continue',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (ctx) => PhoneInputScreen()),
+                      );
                     },
-                    child: Container(
-                      width: double.infinity,
-                      height: 55,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SizedBox(),
-                            Text(
-                              'Continue',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w700,
-                                fontSize: 16,
-                              ),
-                            ),
-                            SvgPicture.asset(
-                              'assets/images/arrowWhite.svg',
-                              fit: BoxFit.cover,
-                              height: 18,
-                              width: 22,
-                              alignment: Alignment.center,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
                   ),
                 ],
               ),

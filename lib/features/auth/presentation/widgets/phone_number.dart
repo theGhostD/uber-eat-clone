@@ -1,7 +1,9 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
-import 'package:uber_eat/features/auth/presentation/mocks/index.dart';
+import 'package:flutter/services.dart';
+import 'package:uber_eat/mocks/index.dart';
 import 'package:uber_eat/features/auth/presentation/models/country_models.dart';
+import 'package:uber_eat/features/auth/presentation/utils/text_formatter.dart';
 
 class PhoneNumberWidget extends StatefulWidget {
   const PhoneNumberWidget({super.key});
@@ -13,6 +15,14 @@ class PhoneNumberWidget extends StatefulWidget {
 class _PhoneNumberWidgetState extends State<PhoneNumberWidget> {
   CountryModels selectedCountry = availableCountry[0];
 
+   final TextEditingController _phoneController = TextEditingController();
+
+   @override
+  void dispose() {
+   _phoneController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -20,7 +30,7 @@ class _PhoneNumberWidgetState extends State<PhoneNumberWidget> {
         return Row(
           children: [
             Container(
-              decoration: BoxDecoration(color: Colors.grey[200]),
+              decoration: BoxDecoration(color: const Color.fromARGB(13, 0, 0, 0)),
               child: SizedBox(
                 width: 90,
                 height: 50,
@@ -100,17 +110,19 @@ class _PhoneNumberWidgetState extends State<PhoneNumberWidget> {
                     child: TextField(
                       decoration: InputDecoration(
                         prefixIcon: Padding(
-                          padding: const EdgeInsets.only(left: 12,right: 12),
-                          child: Text(selectedCountry.countryCode,style: TextStyle(fontWeight: FontWeight.w500),),
+                          padding: const EdgeInsets.only(left: 12),
+                          child: Text(selectedCountry.countryCode,style: TextStyle(
+                            fontSize: 16
+                          ),),
                         ),
-                        prefixIconConstraints: BoxConstraints(minWidth: 0, minHeight: 0,maxHeight: 50),
+                        prefixIconConstraints: BoxConstraints(minWidth: 0, minHeight: 0,maxHeight: 50,),
                     
                         contentPadding: EdgeInsets.symmetric(
                           horizontal: 12,
                           vertical: 12,
                         ),
                     
-                        fillColor: Colors.grey[200],
+                        fillColor: const Color.fromARGB(13, 0, 0, 0),
                         filled: true,
                         border: InputBorder.none,
                     
@@ -120,28 +132,15 @@ class _PhoneNumberWidgetState extends State<PhoneNumberWidget> {
                         )
                       ),
                       keyboardType: TextInputType.phone,
+                      inputFormatters: [
+                        FilteringTextInputFormatter.digitsOnly,
+                        LengthLimitingTextInputFormatter(14),
+                        PhoneNumberFormatter(),
+                      ],
                     ),
                   ),
             ),
-            //           Expanded(
-
-            //             child: TextField(
-            //               decoration: InputDecoration(
-            //               //  isDense: true,
-            //  prefixIcon:Text("\$"),
-            //  prefixIconConstraints: BoxConstraints(minWidth: 28, minHeight: 0),
-
-            //              contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-
-            //                 fillColor: Colors.grey[200],
-            //                 filled: true,
-            //                 border: InputBorder.none,
-
-            //                 hintText: 'Mobile number',
-            //               ),
-            //                keyboardType: TextInputType.phone,
-            //             ),
-            //           ),
+          
           ],
         );
       },
