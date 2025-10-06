@@ -24,7 +24,8 @@ class _HomeIndexState extends State<HomeIndex> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       body: screenList[_selectedIndex],
+      backgroundColor: Colors.white,
+       body: SafeArea(child: screenList[_selectedIndex]),
        bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Color(0xFF000000),
         unselectedItemColor: Color(0xFFB5B5B5),
