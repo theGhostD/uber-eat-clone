@@ -18,7 +18,7 @@ class MainCategory extends StatelessWidget {
           ),
           textAlign: TextAlign.center,
         ),
-
+    
         Expanded(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),

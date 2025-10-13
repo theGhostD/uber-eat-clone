@@ -28,7 +28,7 @@ class MiniCategory extends StatelessWidget {
                 height: 73,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Color(0xFFE6E6E6),
+                  color: Color(0xFFF6F6F6),
                         
                   borderRadius: BorderRadius.circular(8),
                 ),

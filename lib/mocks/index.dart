@@ -1,5 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:uber_eat/features/auth/presentation/models/country_models.dart';
 import 'package:uber_eat/features/home/presentation/models/category.dart';
+import 'package:uber_eat/features/home/presentation/models/promo.dart';
 import 'package:uber_eat/features/home/presentation/models/resturant.dart';
 
 const availableCountry = [
@@ -500,5 +502,18 @@ const availableResturantList = [
     rating: '4.5',
     title: 'African Flavour',
     duration: '10-25 min',
+  ),
+];
+
+const availablePromo = [
+  PromoModel(
+    imageUrl: 'assets/home_images/promo1.png',
+    copy: 'Order from these restaurants and save',
+    color: Color(0xFFD2D7F0),
+  ),
+  PromoModel(
+    imageUrl: 'assets/home_images/promo2.png',
+    copy: 'Have cleaning supplies and other convinence items delivered',
+    color: Color(0xFF9EE2B8),
   ),
 ];
