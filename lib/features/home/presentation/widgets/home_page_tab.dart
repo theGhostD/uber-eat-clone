@@ -18,7 +18,9 @@ class _HomePageTabState extends State<HomePageTab> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: tabList
           .map(
-            (tabValue) => Container(
+            (tabValue) => 
+            
+            Container(
               margin: EdgeInsets.only(right: 8),
               width: 97,
               height: 37,
