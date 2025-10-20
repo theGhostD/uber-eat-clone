@@ -28,18 +28,18 @@ class MiniCategory extends StatelessWidget {
                 height: 73,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Color(0xFFF6F6F6),
+                  color: const Color.fromARGB(88, 53, 53, 53),
                         
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Icon(Icons.more_horiz, size: 36),
+                child: Icon(Icons.more_horiz, size: 36,color: Colors.grey,),
               ),
             ),
             Text(
               'More',
               style: TextStyle(
                 fontSize: 12,
-                color: Colors.black,
+                color: Colors.grey,
                 fontWeight: FontWeight.w500,
               ),
             ),

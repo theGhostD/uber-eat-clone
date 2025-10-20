@@ -39,7 +39,7 @@ class _TabItemState extends State<TabItem> {
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 14,
-                    color: isActive ? Colors.white : Colors.black,
+                    color: isActive ? Colors.white : Colors.grey,
                   ),
                 ),
               ),

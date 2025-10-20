@@ -20,39 +20,42 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-
-      body: DefaultTabController(
-        length: 3,
-        child: Column(
-          children: [
-            TabBar(
-              tabAlignment: TabAlignment.center,
-              indicatorColor: Colors.transparent,
-              dividerColor: Colors.transparent,
-              labelPadding: EdgeInsets.zero,
-              splashFactory: NoSplash.splashFactory, 
-              overlayColor: WidgetStateProperty.all(
-                Colors.transparent,
-              ), 
-              tabs: [
-                Tab(child: TabItem(name: 'Delivery', index: 0)),
-                Tab(child: TabItem(name: 'Pickup', index: 1)),
-                Tab(child: TabItem(name: 'Dine-in', index: 2)),
-              ],
-            ),
-            Expanded(
-              child: TabBarView(
-                 physics: BouncingScrollPhysics(), 
-                children: [
-                  DeliveryTabItem(),
-                  Center(child: Text('Pickup Content Here')),
-                  Center(child: Text('Dine-in Content Here')),
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: const Color.fromARGB(88, 53, 53, 53),
+      
+        body: DefaultTabController(
+          length: 3,
+          child: Column(
+            children: [
+              TabBar(
+                tabAlignment: TabAlignment.center,
+                indicatorColor: Colors.transparent,
+                dividerColor: Colors.transparent,
+                labelPadding: EdgeInsets.zero,
+                splashFactory: NoSplash.splashFactory, 
+                
+                overlayColor: WidgetStateProperty.all(
+                  Colors.transparent,
+                ), 
+                tabs: [
+                  Tab(child: TabItem(name: 'Delivery', index: 0)),
+                  Tab(child: TabItem(name: 'Pickup', index: 1)),
+                  Tab(child: TabItem(name: 'Dine-in', index: 2)),
                 ],
               ),
-            ),
-          ],
+              Expanded(
+                child: TabBarView(
+                   physics: BouncingScrollPhysics(), 
+                  children: [
+                    DeliveryTabItem(),
+                    Center(child: Text('Pickup Content Here')),
+                    Center(child: Text('Dine-in Content Here')),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -25,11 +25,11 @@ class DeliveryTabItem extends StatelessWidget {
 
     return SingleChildScrollView(
       child: Container(
-        color: Color(0xFFF6F6F6),
+        color: const Color.fromARGB(88, 53, 53, 53),
         child: Column(
           children: [
             Container(
-              color: Colors.white,
+              color: Colors.black,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
@@ -51,7 +51,7 @@ class DeliveryTabItem extends StatelessWidget {
             SizedBox(height: 12),
 
             Container(
-              color: Colors.white,
+              color: Colors.black,
               child: Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16,
@@ -69,7 +69,7 @@ class DeliveryTabItem extends StatelessWidget {
             SizedBox(height: 12),
             // promo section
             Container(
-              color: Colors.white,
+              color: Colors.black,
               child: Padding(
                 padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
                 child: SingleChildScrollView(
@@ -86,7 +86,7 @@ class DeliveryTabItem extends StatelessWidget {
             SizedBox(height: 12),
 
             Container(
-              color: Colors.white,
+              color: Colors.black,
               child: Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16,

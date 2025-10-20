@@ -40,6 +40,10 @@ dependencies:
   flutter_svg: ^2.2.1
   dropdown_button2: ^2.3.8
   transparent_image: ^2.0.1
+  video_player: ^2.10.0
+  path_provider: ^2.1.4
+  better_player:  
+    git: https://github.com/Lo4D/better-player-ultra.git
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +72,7 @@ flutter:
     - assets/images/
     - assets/category_images/
     - assets/home_images/
+    - assets/videos/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

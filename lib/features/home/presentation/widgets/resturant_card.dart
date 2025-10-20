@@ -10,7 +10,7 @@ class ResturantCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        print('InkWell tapped!');
+      
       },
 
       child: Column(
@@ -79,7 +79,7 @@ class ResturantCard extends StatelessWidget {
                     resturant.title,
 
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.grey,
                       fontSize: 16,
                       height: 21 / 14,
                       fontWeight: FontWeight.w500,
@@ -91,19 +91,19 @@ class ResturantCard extends StatelessWidget {
                         Text(
                           '\$0.29 Delivery Fee',
                           style: TextStyle(
-                            color: Color(0xFF6B6B6B),
+                            color: Colors.grey[700],
                             fontSize: 14,
                             height: 21 / 14,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
                         SizedBox(width: 8),
-                        Icon(Icons.circle, size: 3, color: Color(0xFF6B6B6B)),
+                        Icon(Icons.circle, size: 3, color: Colors.grey[700]),
                         SizedBox(width: 8),
                         Text(
                           resturant.duration!,
                           style: TextStyle(
-                            color: Color(0xFF6B6B6B),
+                            color: Colors.grey[700],
                             fontSize: 14,
                             height: 21 / 14,
                             fontWeight: FontWeight.w500,
@@ -119,13 +119,13 @@ class ResturantCard extends StatelessWidget {
                 height: 28,
 
                 decoration: BoxDecoration(
-                  color: Color(0xFFEEEEEE),
+                  color: Colors.grey,
                   borderRadius: BorderRadius.circular(999),
                 ),
                 child: Center(
                   child: Text(
                     resturant.rating,
-                    style: TextStyle(color: Colors.black, fontSize: 12),
+                    style: TextStyle(color: Colors.white, fontSize: 12),
                     textAlign: TextAlign.center,
                   ),
                 ),

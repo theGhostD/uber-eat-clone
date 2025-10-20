@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uber_eat/features/auth/presentation/models/country_models.dart';
+import 'package:uber_eat/features/explore/presentation/models/reels.dart';
 import 'package:uber_eat/features/home/presentation/models/category.dart';
 import 'package:uber_eat/features/home/presentation/models/promo.dart';
 import 'package:uber_eat/features/home/presentation/models/resturant.dart';
@@ -516,4 +517,93 @@ const availablePromo = [
     copy: 'Have cleaning supplies and other convinence items delivered',
     color: Color(0xFF9EE2B8),
   ),
+];
+
+List<ReelsModel> videoUrls = [
+  ReelsModel(
+    desp: "Juicy double patty burger with melted cheese and fresh toppings - premium quality",
+    name: "Classic Burger",
+    price: '999.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760699693/ScreenRecording_10-17-2025_12-05-16_PM_1_oopkq9.mov',
+    brandname: 'Burger King'
+  ),
+  ReelsModel(
+    desp: "Spicy suya seasoned taco with tender meat and fresh veggies - street food perfection",
+    name: "Suya Taco",
+    price: '1099.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760699690/ScreenRecording_10-17-2025_12-06-17_PM_1_xz0we4.mov',
+    brandname: 'Taco Bell'
+  ),
+  ReelsModel(
+    desp: "Authentic Mexican tacos with slow-cooked beef and handmade tortillas",
+    name: "Beef Tacos",
+    price: '899.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760699681/ScreenRecording_10-17-2025_12-06-29_PM_1_nmbwjh.mov',
+    brandname: 'Tacos El Rey'
+  ),
+  ReelsModel(
+    desp: "Garlic butter jumbo shrimps grilled to perfection with lemon herb sauce",
+    name: "Garlic Shrimps",
+    price: '949.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760696788/IMG_5550_ymtmfb.mov',
+    brandname: 'Shrimp Shack'
+  ),
+  ReelsModel(
+    desp: "Premium streak steak cooked medium-rare with chimichurri sauce and fries",
+    name: "Streak Steak",
+    price: '1199.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760696768/IMG_5557_intjor.mov',
+    brandname: 'Steak House'
+  ),
+  ReelsModel(
+    desp: "Ultimate main burger with bacon, avocado, and signature sauce - restaurant quality",
+    name: "Main Burger",
+    price: '799.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760696735/IMG_5552_vp3y8v.mov',
+    brandname: 'Burger Joint'
+  ),
+  ReelsModel(
+    desp: "Authentic Nigerian jollof rice with smoked fish, chicken and plantain",
+    name: "Jollof Rice",
+    price: '1049.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760696723/568BD4FF-9600-451F-9039-B9800159BDC3_agfyvq.mov',
+    brandname: 'Mama Put'
+  ),
+  ReelsModel(
+    desp: "Creamy vanilla ice cream with chocolate chips and waffle cone - dessert heaven",
+    name: "Vanilla Ice Cream",
+    price: '1299.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760696705/F2540A1A-50A6-4C4E-BA92-A90AD05F59C6_o7lg6c.mov',
+    brandname: 'Ice Cream Palace'
+  ),
+  ReelsModel(
+    desp: "Exotic culture fusion dish with African and Mexican flavors combined",
+    name: "Culture Fusion",
+    price: '699.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760696699/ab2f8ccf6cdc45bca53cbc4e495b26dd_rtbshp.mp4',
+    brandname: 'Culture Kitchen'
+  ),
+  ReelsModel(
+    desp: "Complete main course platter with rice, protein, and fresh salad sides",
+    name: "Main Course",
+    price: '899.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760695980/VIDEO-2025-10-16-22-22-30_q18bdu.mp4',
+    brandname: 'Main Course Masters'
+  ),
+  ReelsModel(
+    desp: "Loaded pepperoni pizza with extra cheese and crispy crust - Italian classic",
+    name: "Pepperoni Pizza",
+    price: '999.99',
+    videoUrl: 'https://res.cloudinary.com/dafkpzydf/video/upload/q_auto,f_auto/v1760699693/ScreenRecording_10-17-2025_12-04-13_PM_1_pct6af.mov',
+    brandname: 'Pizza Palace'
+  ),
+];
+List<String> videoUrls1 = [
+  'assets/videos/video1.mov',
+  'assets/videos/video2.mov',
+  'assets/videos/video3.mov',
+  'assets/videos/video4.mov',
+  'assets/videos/video5.mov',
+  'assets/videos/video6.mov',
+  'assets/videos/video7.mov',
 ];

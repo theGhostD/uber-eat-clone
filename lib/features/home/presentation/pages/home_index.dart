@@ -24,25 +24,33 @@ class _HomeIndexState extends State<HomeIndex> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-       body: SafeArea(child: screenList[_selectedIndex]),
-       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Color(0xFF000000),
-        unselectedItemColor: Color(0xFFB5B5B5),
-        backgroundColor: Colors.white,
-        elevation: 0,
-        onTap: setSelectedIndex,
-        currentIndex: _selectedIndex,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Explore'),
-
-           BottomNavigationBarItem(icon: Icon(Icons.person_2), label: 'Account'),
-        ],
-      ),
+      backgroundColor: Colors.black,
+       body: screenList[_selectedIndex],
+       bottomNavigationBar: Theme(
+         data: ThemeData(
+          highlightColor: const Color.fromARGB(255, 0, 0, 0),
+          splashColor: Colors.transparent,
+          splashFactory: NoSplash.splashFactory, // Removes the splash animation entirely
+        ),
+         child: BottomNavigationBar(
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.white,
+          backgroundColor: Colors.black,
+          
+          elevation: 0,
+          onTap: setSelectedIndex,
+          currentIndex: _selectedIndex,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: '',
+            ),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: ''),
+         
+             BottomNavigationBarItem(icon: Icon(Icons.person_2), label: ''),
+          ],
+               ),
+       ),
     );
   }
 }

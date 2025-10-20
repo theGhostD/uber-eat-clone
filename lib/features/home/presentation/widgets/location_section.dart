@@ -15,7 +15,7 @@ class LocationSection extends StatelessWidget {
             Text(
               'Now',
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.grey,
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
               ),
@@ -24,16 +24,16 @@ class LocationSection extends StatelessWidget {
             Text(
               'London Hall',
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.grey,
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
               ),
             ),
-            Icon(Icons.keyboard_arrow_down_sharp),
+            Icon(Icons.keyboard_arrow_down_sharp, color: Colors.grey,),
           ],
         ),
 
-        Icon(Icons.adjust, size: 28),
+        Icon(Icons.adjust, size: 28, color: Colors.grey,),
       ],
     );
   }
