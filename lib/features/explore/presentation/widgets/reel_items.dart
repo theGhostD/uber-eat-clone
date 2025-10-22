@@ -14,14 +14,14 @@ class ReelItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        //     Positioned.fill(
-        //   child: AspectRatio(
-        //     aspectRatio: controller.value.aspectRatio,
-        //     child: controller.value.isInitialized
-        //         ? VideoPlayer(controller)
-        //         : Center(child: CircularProgressIndicator()),
-        //   ),
-        // ),
+            Positioned.fill(
+          child: AspectRatio(
+            aspectRatio: controller.value.aspectRatio,
+            child: controller.value.isInitialized
+                ? VideoPlayer(controller)
+                : Center(child: CircularProgressIndicator()),
+          ),
+        ),
         Positioned(
           top: 0,
           left: 0,

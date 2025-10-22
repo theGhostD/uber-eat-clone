@@ -57,6 +57,7 @@ class _ExplorePageState extends State<ExplorePage> {
 
   void onPageChange(int pageIndex) async {
     await _videoController[_currentIndex].pause();
+    await _videoController[pageIndex].initialize();
     await _videoController[pageIndex].play();
 
     for (int i = 0; i < _currentIndex; i++) {
