@@ -606,4 +606,5 @@ List<String> videoUrls1 = [
   'assets/videos/video5.mov',
   'assets/videos/video6.mov',
   'assets/videos/video7.mov',
+  'https://res.cloudinary.com/dafkpzydf/image/upload/q_auto,f_auto/v1760695445/cld-sample-4.jpg'
 ];

@@ -15,6 +15,8 @@ class MiniCategory extends StatelessWidget {
       crossAxisSpacing: 8,
       // mainAxisSpacing: 8,
       childAspectRatio: 0.9,
+      physics: NeverScrollableScrollPhysics(),
+       shrinkWrap: true,
       children: [
         ...availableCategory
             .take(7)
@@ -28,11 +30,11 @@ class MiniCategory extends StatelessWidget {
                 height: 73,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(88, 53, 53, 53),
+                  color: Theme.of(context).colorScheme.tertiary,
                         
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Icon(Icons.more_horiz, size: 36,color: Colors.grey,),
+                child: Icon(Icons.more_horiz, size: 36,color: Theme.of(context).colorScheme.primary,),
               ),
             ),
             Text(

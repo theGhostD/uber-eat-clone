@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:uber_eat/features/auth/presentation/pages/splash_screen.dart';
 import 'package:uber_eat/firebase_options.dart';
+import 'package:uber_eat/themes/dark_theme.dart';
+import 'package:uber_eat/themes/light_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,6 +20,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      theme: lightTheme,
+      darkTheme: darkTheme,
       home: MyAuthSplashScreen(),
     );
   }

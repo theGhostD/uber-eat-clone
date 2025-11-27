@@ -15,7 +15,7 @@ class ArrowButton extends StatelessWidget {
         width: double.infinity,
         height: 55,
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(12),
         ),
         child: Padding(
@@ -27,18 +27,13 @@ class ArrowButton extends StatelessWidget {
               Text(
                 copy,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Theme.of(context).colorScheme.secondary,
                   fontWeight: FontWeight.w700,
                   fontSize: 16,
                 ),
               ),
-              SvgPicture.asset(
-                'assets/images/arrowWhite.svg',
-                fit: BoxFit.cover,
-                height: 18,
-                width: 22,
-                alignment: Alignment.center,
-              ),
+              Icon(Icons.arrow_right_alt,color: Theme.of(context).colorScheme.secondary,size: 32,),
+             
             ],
           ),
         ),

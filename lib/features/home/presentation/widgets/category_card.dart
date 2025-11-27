@@ -16,7 +16,7 @@ class CategoryCard extends StatelessWidget {
         Container(
           height: 73,
           decoration: BoxDecoration(
-            color: const Color.fromARGB(88, 53, 53, 53),
+            color: Theme.of(context).colorScheme.tertiary,
            
             borderRadius: BorderRadius.circular(8)
           ),

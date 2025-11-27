@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: const Color.fromARGB(88, 53, 53, 53),
+        backgroundColor: Theme.of(context).colorScheme.secondary,
       
         body: DefaultTabController(
           length: 3,

@@ -18,7 +18,7 @@ class MainCategory extends StatelessWidget {
           ),
           textAlign: TextAlign.center,
         ),
-    
+
         Expanded(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -27,12 +27,12 @@ class MainCategory extends StatelessWidget {
               crossAxisSpacing: 8,
               // mainAxisSpacing: 8,
               childAspectRatio: 0.9,
+              physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
               children: [
                 ...availableCategory.map(
                   (category) => CategoryCard(category: category),
                 ),
-            
-                
               ],
             ),
           ),

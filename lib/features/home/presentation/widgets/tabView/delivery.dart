@@ -15,7 +15,7 @@ class DeliveryTabItem extends StatelessWidget {
       showModalBottomSheet(
         // useSafeArea: true,
         showDragHandle: true,
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).colorScheme.secondary,
         context: context,
         builder: (context) {
           return MainCategory();
@@ -25,11 +25,11 @@ class DeliveryTabItem extends StatelessWidget {
 
     return SingleChildScrollView(
       child: Container(
-        color: const Color.fromARGB(88, 53, 53, 53),
+        color: Theme.of(context).colorScheme.primary,
         child: Column(
           children: [
             Container(
-              color: Colors.black,
+              color: Theme.of(context).colorScheme.secondary,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
@@ -48,10 +48,8 @@ class DeliveryTabItem extends StatelessWidget {
               ),
             ),
 
-            SizedBox(height: 12),
-
             Container(
-              color: Colors.black,
+              color: Theme.of(context).colorScheme.secondary,
               child: Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16,
@@ -66,10 +64,10 @@ class DeliveryTabItem extends StatelessWidget {
               ),
             ),
 
-            SizedBox(height: 12),
+           
             // promo section
             Container(
-              color: Colors.black,
+              color: Theme.of(context).colorScheme.secondary,
               child: Padding(
                 padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
                 child: SingleChildScrollView(
@@ -83,10 +81,10 @@ class DeliveryTabItem extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 12),
+           
 
             Container(
-              color: Colors.black,
+              color: Theme.of(context).colorScheme.secondary,
               child: Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16,

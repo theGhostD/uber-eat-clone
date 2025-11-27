@@ -27,9 +27,9 @@ class _TabItemState extends State<TabItem> {
             width: 97,
             height: 37,
             decoration: BoxDecoration(
-              color: isActive ? Colors.black : Colors.transparent,
+              color: isActive ? Theme.of(context).colorScheme.primary : Colors.transparent,
               borderRadius: BorderRadius.circular(24),
-              border: Border.all(),
+              border: Border.all(color: Theme.of(context).colorScheme.primary),
             ),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -37,9 +37,9 @@ class _TabItemState extends State<TabItem> {
                 child: Text(
                   widget.name,
                   style: TextStyle(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: isActive ?  FontWeight.w600 : FontWeight.w400,
                     fontSize: 14,
-                    color: isActive ? Colors.white : Colors.grey,
+                    color: isActive ? Theme.of(context).colorScheme.tertiary : Colors.grey,
                   ),
                 ),
               ),

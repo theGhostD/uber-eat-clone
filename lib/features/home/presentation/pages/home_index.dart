@@ -19,38 +19,35 @@ class _HomeIndexState extends State<HomeIndex> {
     });
   }
 
-  List<Widget> screenList = [HomePage(), ExplorePage(),ProfilePage()];
+  List<Widget> screenList = [HomePage(), ExplorePage(), ProfilePage()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-       body: screenList[_selectedIndex],
-       bottomNavigationBar: Theme(
-         data: ThemeData(
+      backgroundColor: Theme.of(context).colorScheme.secondary,
+      body: screenList[_selectedIndex],
+      bottomNavigationBar: Theme(
+        data: ThemeData(
           highlightColor: const Color.fromARGB(255, 0, 0, 0),
           splashColor: Colors.transparent,
-          splashFactory: NoSplash.splashFactory, // Removes the splash animation entirely
+          splashFactory: NoSplash.splashFactory,
         ),
-         child: BottomNavigationBar(
+        child: BottomNavigationBar(
           selectedItemColor: Colors.white,
           unselectedItemColor: Colors.white,
           backgroundColor: Colors.black,
-          
+
           elevation: 0,
           onTap: setSelectedIndex,
           currentIndex: _selectedIndex,
           items: [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home_filled),
-              label: '',
-            ),
+            BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: ''),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: ''),
-         
-             BottomNavigationBarItem(icon: Icon(Icons.person_2), label: ''),
+
+            BottomNavigationBarItem(icon: Icon(Icons.person_2), label: ''),
           ],
-               ),
-       ),
+        ),
+      ),
     );
   }
 }

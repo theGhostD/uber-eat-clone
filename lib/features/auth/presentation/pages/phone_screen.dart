@@ -28,7 +28,7 @@ class _PhoneInputScreenState extends State<PhoneInputScreen> {
                 child: Text(
                   'Enter your mobile number',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Theme.of(context).colorScheme.primary,
                     fontSize: 20,
                     fontWeight: FontWeight.w500,
                   ),
@@ -90,7 +90,7 @@ class _PhoneInputScreenState extends State<PhoneInputScreen> {
                   decoration: BoxDecoration(
                     color: Colors.transparent,
                     borderRadius: BorderRadius.circular(12),
-                    border: BoxBorder.all(width: 0.5)
+                    border: BoxBorder.all(width: 0.5,color: Theme.of(context).colorScheme.primary)
                   ),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -110,7 +110,7 @@ class _PhoneInputScreenState extends State<PhoneInputScreen> {
                           'Continue with google',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Theme.of(context).colorScheme.primary,
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
                             
